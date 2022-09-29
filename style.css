@@ -1,0 +1,31 @@
+#mil{
+    width:20px;
+    height:10px;
+    background-color: green;
+}
+#dezmil{
+    width:20px;
+    height:100px;
+    background-color: green;
+}
+#cemmil{
+    width:20px;
+    height:1000px;
+    background-color: green;
+}
+#milhao{
+    width:20px;
+    height:10000px;
+    background-color: green;
+}
+#bilhao{
+    width:20px;
+    height:10000000px;
+    background-color: green;
+}
+.container-flex{
+    display:flex;
+}
+.item-flex{
+    margin-right: 15px;
+}
