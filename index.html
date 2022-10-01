@@ -6,42 +6,95 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>One Billion</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" type="image/png" href="icon.png"> 
         <meta name="description" content="O objetivo desta página é demonstrar visualmente a diferença de valores entre R$1.000,00 (um mil) e R$1.000.000.000,00 (um bilhão), e trazer uma reflexão sobre onde estamos no mapa da desigualdade.">
         <meta name="keywords" content="bilhão, milhão, mil, salário, captalismo, desigualdade, valores">
     </head>
     <body>
-        <header>
-            <h1>A distância de 1 milhão e 1 bilhão</h1>
+          <header class="nav">
+              <div>por Wemmerson Albuquerque </div> <a href="https://github.com/WemmersonAlb" target="_blank"><img src="git.png" alt="icone github"></a><div> - 2022</div>          
           </header>
+          <main>
+            <header>
+              <h1>A diferença visual de renda</h1>              
+            </header>
+            <section>
+              <p>As vezes é difícil perceber a diferença de renda entre os diferentes extratos sociais. A One Billion foi criada para contextualizar visualmente essas diferenças.</p>
+              <p>O modelo contextualiza esses valores com os salários de políticos e escandalos de corrupção famosos em nosso país.</p>
+              <p>Este site visa trazer a reflexão sobre o contexto econômico, e não defender políticos ou partidos.</p>
+            </section>
+            
+            <section class="container-gl">
+              <div class="item-gl">
+                <div class="legenda">
+                  <header>
+                    <h2>Legenda</h2>
+                  </header>
+                  <article id="l1"><a href="https://www.google.com/search?q=valor+do+sal%C3%A1rio+m%C3%ADnimo+2022&ei=9yo4Y-X9CZnf1sQPqduswA4&ved=0ahUKEwil1efs_L76AhWZr5UCHaktC-gQ4dUDCA4&uact=5&oq=valor+do+sal%C3%A1rio+m%C3%ADnimo+2022&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzILCAAQgAQQsQMQgwEyBAgAEEMyBAgAEEMyCAgAEIAEELEDMgUIABCABDIFCAAQgAQyBAgAEEMyBQgAEIAEMgUIABCABDIFCAAQgAQ6CggAEEcQ1gQQsANKBAhBGABKBAhGGABQqApY7w5g1g9oAXABeACAAc4CiAH-BZIBBzAuMy4wLjGYAQCgAQHIAQjAAQE&sclient=gws-wiz-serp#:~:text=Web%20em%20destaque-,R%24%201.212,-Foi%20publicado%20no" target="_blank">Salário Mínimo R$1.212,00</a></article>
+                  <article id="l2"><a href="https://www.infomoney.com.br/minhas-financas/classes-d-e-e-continuarao-a-ser-mais-da-metade-da-populacao-ate-2024-projeta-consultoria/#:~:text=Classes%20D/E%3A%2050%2C7%25%20(renda%20mensal%20domiciliar%20at%C3%A9%20R%24%202%2C9%20mil)" target="_blank">Fim da classe D R$2.900,00</a></article>
+                  <article id="l3"><a href="https://www.infomoney.com.br/minhas-financas/classes-d-e-e-continuarao-a-ser-mais-da-metade-da-populacao-ate-2024-projeta-consultoria/#:~:text=Classe%20C%3A%2033%2C3%25%20(renda%20mensal%20domiciliar%20entre%20R%24%202%2C9%20mil%20e%20R%24%207%2C1%20mil)" target="_blank">Fim da Classe C R$7.100,00</a></article>
+                  <article id="l4"><a href="https://www.google.com/search?q=sal%C3%A1rio+m%C3%A9dio+de+um+vereador&ei=3is4Y5uoMJDb1sQPqsu72A8&ved=0ahUKEwibj6Hb_b76AhWQrZUCHarlDvsQ4dUDCA4&uact=5&oq=sal%C3%A1rio+m%C3%A9dio+de+um+vereador&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIJCAAQHhDJAxAWOgoIABBHENYEELADOg0IABBHENYEELADEMkDOgUIABCABDoGCAAQHhAWSgQIQRgASgQIRhgAUNrUB1jK3Qdg1N4HaAJwAXgCgAHbBIgBzBGSAQswLjMuMC4xLjIuMZgBAKABAcgBCMABAQ&sclient=gws-wiz-serp#:~:text=Qual%20%C3%A9%20o%20sal%C3%A1rio%20de%20Vereador%3F%20O%20sal%C3%A1rio%20m%C3%A9dio%20nacional%20de%20Vereador%20%C3%A9%20de%20R%247.319%20em%20Brasil.%20Filtre%20por%20localiza%C3%A7%C3%A3o%20para%20ver%20os%20sal%C3%A1rios%20de%20Vereador%20na%20sua%20regi%C3%A3o.%20As%20estimativas%20de%20sal%C3%A1rios%20t%C3%AAm%20como%20base%20os%208%20sal%C3%A1rios%20enviados%20de%20forma%20sigilosa%20ao%20Glassdoor%20por%20funcion%C3%A1rios%20com%20o%20cargo%20de%20Vereador" target="_blank">Salário Médio de Vereador R$8.000,00,00</a></article>
+                  <article id="l5"><a href="https://www.infomoney.com.br/minhas-financas/classes-d-e-e-continuarao-a-ser-mais-da-metade-da-populacao-ate-2024-projeta-consultoria/#:~:text=Classe%20B%3A%2013%2C2%25%20(renda%20mensal%20domiciliar%20entre%20R%24%207%2C1%20mil%20e%20R%24%2022%20mil)" target="_blank">Fim da classe B, início da A R$22.000,00</a></article>
+                  <article id="l6"><a href="https://g1.globo.com/politica/noticia/2021/01/26/salarios-dos-prefeitos-nas-capitais-variam-de-r-176-mil-a-r-31-mil-vereadores-recebem-ate-r-189-mil.ghtml#:~:text=R%24%2017%2C6%20mil%20a%20R%24%2031%20mil" target="_blank">Salário Médio de Prefeito R$24.000,00</a></article>
+                  
+                  <article id="l7"><a href="https://pt.wikipedia.org/wiki/Esc%C3%A2ndalo_do_mensal%C3%A3o#:~:text=O%20esc%C3%A2ndalo%20estourou%20em%206%20de%20junho%20de%202005%2C%20quando%20o%20deputado%20brasileiro%20Roberto%20Jefferson%20disse%20ao%20jornal%20Folha%20de%20S.Paulo%20que%20o%20Partido%20dos%20Trabalhadores%20(PT)%20pagou%20a%20v%C3%A1rios%20deputados%2030%20mil%20reais%20por%20m%C3%AAs%20para%20votar%20para%20legisla%C3%A7%C3%A3o%20favorecida%20pelo%20partido%20na%20C%C3%A2mara%20dos%20Deputados%20do%20Brasil." target="_blank">Dinheiro pago pelo PT a deputados durante o Mensalão (2005) R$30.000,00</a></article>
+                  
+                  <article id="l8"><a href="https://g1.globo.com/politica/noticia/2020/10/16/senador-com-dinheiro-na-cueca-o-que-se-sabe-e-o-que-falta-esclarecer.ghtml#:~:text=Chico%20Rodrigues%20(DEM%2DRR)%2C%20ent%C3%A3o%20vice%2Dl%C3%ADder%20do%20governo%2C%20foi%20flagrado%20pela%20PF%20com%20R%24%2033%20mil%20na%20cueca%20em%20opera%C3%A7%C3%A3o%20sobre%20supostos%20desvios%20na%20Sa%C3%BAde.%20Ele%20diz%20que%20provar%C3%A1%20inoc%C3%AAncia." target="_blank">Dinheiro na cueca do Vice-lider do governo Bolsonaro R$33.000,00</a></article>
+                  <article id="l9"><a href="https://www.poder360.com.br/brasil/flavio-bolsonaro-entrega-loja-de-chocolates-investigada-pelo-mp/#:~:text=A%20quebra%20de%20sigilo%20banc%C3%A1rio%20de%20Queiroz%20indicou%20que%20ele%20pagou%20R%24%2089.000%20em%20cheques%20de%202011%20a%202016%20para%20a%20primeira%2Ddama%2C%20Michelle%20Bolsonaro.%20Queiroz%20tamb%C3%A9m%20pagava%20contas%20pessoais%20do%20presidente." target="_blank">Cheque de Queiroz para Michele Bolsonaro R$89.000,00</a></article>
+                  <article id="l10"><a href="https://www.poder360.com.br/midia/entenda-como-foi-a-compra-de-votos-a-favor-da-emenda-da-reeleicao-em-1997/#:~:text=Reportagem%20de%2013,favor%20da%20reelei%C3%A7%C3%A3o" target="_blank">Compra de votos de FHC para possibilitar a reeleição a presidência R$200.000,00 (1997)</a></article>
+                  <article id="l11"><a href="" target="_blank">Gráfico correspondente a um milhão R$1.000.000,00</a></article>
+                  <article id="l12"><a href="https://g1.globo.com/sp/santos-regiao/noticia/2022/07/09/veja-como-esta-o-triplex-de-guaruja-avaliado-em-r-3-milhoes-e-entregue-ao-novo-dono-video.ghtml" target="_blank">Triplex que supostamente foi usado como propina para Lula R$3.000.000,00</a></article>
+                  <article id="l13"><a href="https://www.poder360.com.br/brasil/flavio-bolsonaro-entrega-loja-de-chocolates-investigada-pelo-mp/#:~:text=Investigadores%20afirmam%20que%20foram%20desviados%20R%24%206%2C1%20milh%C3%B5es.%20O%20operador%20do%20esquema%20teria%20sido%20seu%20ex%2Dassessor%20Fabr%C3%ADcio%20Queiroz%2C%20policial%20militar%20aposentado%20e%20bra%C3%A7o%20direito%20de%20Fl%C3%A1vio." target="_blank">Valor supostamente lavado pela franquia de chocolates de Flávio Bolsonaro R$6.000.000,00</a></article>
+                  
+                  
+                  <article id="l14"><a href="http://g1.globo.com/politica/operacao-lava-jato/noticia/2016/06/sarney-recebeu-r-1625-milhoes-em-dinheiro-vivo-diz-sergio-machado.html" target="_blank">Dinheiro pago a Sarney como Propina por Sérgio Machado R$16.250.000,00</a></article>
+                  
+                  
+                  
+                  <article id="l15"><a href="https://g1.globo.com/jornal-nacional/noticia/2022/08/31/reportagem-do-uol-revela-que-51-imoveis-comprados-pela-familia-bolsonaro-foram-pagos-em-dinheiro-vivo.ghtml#:~:text=Em%20valores%20corrigidos%20pela%20infla%C3%A7%C3%A3o%2C%20o%20montante%20equivale%20hoje%20a%20quase%20R%24%2026%20milh%C3%B5es.%20A%20PF%20pediu%20%C3%A0%20Justi%C3%A7a%20Federal%20para%20investigar%20compra%20de%20mans%C3%A3o%20por%20ex%2Dmulher%20do%20presidente." target="_blank">Valor total dos imóveis da família Bolsonaro comprados em dinheiro vivo R$26.000.000,00</a></article>
+                  
+                  <article id="l6"><a href="" target="_blank">Gráfico correspondente a um bilhão R$1.000.000.000,00</a></article>
+                </div>
+              </div>
+              <div class="item-gl">
+                
+                <div id='g16'>
+                  <div id="g15">
+                    <div id="g14">
+                      <div id="g13">
+                        <div id="g12">
+                          <div id="g11">
+                            <div id="g10">
+                              <div id="g9">
+                                <div id="g8">
+                                  <div id="g7">
+                                    <div id="g6">
+                                      <div id="g5">
+                                        <div id="g4">
+                                          <div id="g3">
+                                            <div id="g2">
+                                              <div id="g1">
+                                                
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                    
+                  </div>
+                </div>
+              
+              </div>
+            </section>
+          </main>
           
-          <p>As vezes não conseguimos distinguir a diferença entre esses dois valores.</p>
-          <p>Veja abaixo a difernça de proporção.</p>
-          <div class="container-flex">
-            <div class="item-flex">
-              <h2>Mil</h2>
-              <div id="mil"></div>
-              <p>Isso representa R$1000,00</p>
-            </div>
-            <div class="item-flex">
-              <h2>Dez mil</h2>
-              <div id="dezmil"></div>
-              <p>Isso representa R$10.000,00</p>
-            </div>
-            <div class="item-flex">
-              <h2>Cem mil</h2>
-              <div id="cemmil"></div>
-              <p>Isso representa R$100.000,00</p>
-            </div>
-            <div class="item-flex">
-              <h2>1 milhão</h2>
-              <div id="milhao"></div>
-              <p>Isso representa R$1.000.000,00</p>
-            </div>
-            <div class="item-flex">
-              <h2>1 bilhão</h2>
-              <div id="bilhao"></div>
-              <p>Isso representa R$1.000.000.000,00</p>
-            </div>
-          </div>
     </body>
 </html>
